@@ -1,53 +1,48 @@
+import styles from "./header.module.scss";
+import amazonLogo from "../assets/amazon.png";
+
 const Header = () => {
   return (
-    <header className="d-flex align-center">
-      <div className="header__logo">
-        <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="/" />
+    <header className={`${styles.header} d-flex align-center`}>
+      <div className={`${styles.header__logo}`}>
+        <img src={amazonLogo} alt="/" />
       </div>
-      <div className="header__location d-flex align-center">
+      <div className={`${styles.header__location} d-flex align-center`}>
         <div className="icon">
           <svg
+            width="12"
+            height="15"
+            viewBox="0 0 12 15"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-geo-alt"
-            viewBox="0 0 16 16"
           >
-            <path
-              fill="white"
-              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
-            />
-            <path
-              fill="white"
-              d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-            />
+            <g id="Group">
+              <path
+                id="Vector"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.826172 6.42753C0.835777 3.60048 3.13535 1.31648 5.9624 1.32606C8.78946 1.33569 11.0735 3.63526 11.0639 6.46232V6.52029C11.0291 8.35797 10.003 10.0565 8.74501 11.3841C8.02558 12.1311 7.22218 12.7925 6.35081 13.3551C6.11781 13.5566 5.77221 13.5566 5.53922 13.3551C4.24022 12.5096 3.10013 11.4421 2.1711 10.2014C1.34307 9.11959 0.872949 7.80649 0.826172 6.44493V6.42753Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_2"
+                d="M5.94487 8.16666C6.85098 8.16666 7.58553 7.43211 7.58553 6.526C7.58553 5.61988 6.85098 4.88533 5.94487 4.88533C5.03875 4.88533 4.3042 5.61988 4.3042 6.526C4.3042 7.43211 5.03875 8.16666 5.94487 8.16666Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
           </svg>
         </div>
         <div>
-          <span className="d-block white">Deliver to</span>
-          <span className="white">Philippines</span>
+          <span className="d-block fs-12">Deliver to</span>
+          <span className="fs-14">Philippines</span>
         </div>
       </div>
-      {/* <form className="d-flex align-center">
-        <Select
-          style={{ backgroundColor: "#f3f3f3" }}
-          value={{}}
-          onChange={{}}
-          displayEmpty
-          inputProps={{ "aria-label": "Without label" }}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-        <div>
-          <input type="text" name="query" id="query" />
-        </div>
-      </form> */}
     </header>
   );
 };

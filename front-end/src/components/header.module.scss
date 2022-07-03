@@ -1,0 +1,16 @@
+@use "../scss/partials/colors";
+
+.header {
+  padding: 0.625rem 1rem;
+  background-color: colors.$black;
+
+  .header__logo {
+    width: 7.0625rem;
+    height: auto;
+  }
+
+  .header__location {
+    gap: 0.25rem;
+    color: colors.$white;
+  }
+}
